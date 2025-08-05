@@ -4,3 +4,9 @@
 let totalCost = 5 + 3;
 let text = "Total cost: $" + totalCost;
 console.log(text);
+
+//2 do the same thing as in the above, but use a template string and interpolation.
+
+let totalCost2 = 5 + 3;
+let text2 = `Total cost: $${totalCost2}`;
+console.log(text2);
