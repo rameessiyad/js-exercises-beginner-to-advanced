@@ -6,7 +6,6 @@
 let costPerOrder = 10 + 3 * 8 + 5;
 let costPerPerson = costPerOrder / 3 //-> cost per person
 
-
 //3 calculate the total cost of a toaster ($18.50) and 2 shirts ($7.50 each).
 console.log(18.50 + 2 * 7.50, "total cost of 2 toasters and 2 shirts")
 
@@ -18,3 +17,13 @@ console.log(tax, "total cost of 2 toasters and 2 shirts with 10% tax")
 //5 calculate a 20% tax fot the total in above question (remember that 1% = 1/100, so 20% is 20/100 = 0.2)
 let twentyPercentTax = totalCost * 0.2;
 console.log(twentyPercentTax, "total cost of 2 toasters and 2 shirts with 20% tax")
+
+// ********Farenheit to Celcius********/
+// *Farenheit = (Celsius*9/5) + 32
+// *Celsius = (Farenheit - 32) * 5/9
+
+// q1 The temperatur is 25 degree Celcius. Calculate the temperature in farenheit(77)
+console.log((25 * 9) / 5 + 32);
+
+// q2 The temperature is 85 degree farenheit. Calculate the temperature in Celcius(30)
+console.log((85 - 32) * 5 / 9);
