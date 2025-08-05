@@ -10,3 +10,5 @@ console.log(text);
 let totalCost2 = 5 + 3;
 let text2 = `Total cost: $${totalCost2}`;
 console.log(text2);
+
+// Interpolation in JavaScript means inserting (or embedding) variables or expressions inside a string using template literals.
