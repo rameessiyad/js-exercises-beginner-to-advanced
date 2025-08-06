@@ -23,18 +23,29 @@
         // }
 
         //q2 with guess variable and check if your guess matches the result and display you win if matches or you lose if not
+        // const flipCoin = () => {
+        //     let randomNumber = Math.random();
+        //     let result = '';
+        //     let guess = 'heads';
+        //     if (randomNumber < 0.5) {
+        //         result = 'heads';
+        //     } else {
+        //         result = 'tails'
+        //     }
+        //     console.log(result === guess ? 'You win' : 'You lose');
+        //     console.log(`The result is ${result}`)
+        // }
+
+        //q3 instead of using if statements for the above, use ternary operator
         const flipCoin = () => {
             let randomNumber = Math.random();
             let result = '';
             let guess = 'heads';
-            if (randomNumber < 0.5) {
-                result = 'heads';
-            } else {
-                result = 'tails'
-            }
-            console.log(result === guess ? 'You win' : 'You lose');
+
+            randomNumber < 0.5 ? result = 'heads' : result = 'tails';
+            console.log(result === guess ? 'You win' : 'You Lose');
             console.log(`The result is ${result}`)
-        }
+        } 
     </script>
 </body>
 
