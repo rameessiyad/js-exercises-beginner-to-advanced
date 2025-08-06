@@ -19,6 +19,17 @@
         }else if(randomNumber >= 2/3 && randomNumber < 1) {
             computerMove = 'scissors'
         }
+
+        let result = '';
+        if(computerMove === 'rock') {
+            result = 'Tie';
+        }else if(computerMove === 'papper') {
+            result = 'You lose'
+        }else if(computerMove === 'scissors') {
+            result = 'You Win'
+        }
+
+        alert(`You picked rock, Computer picked ${computerMove}, ${result}`)
     ">
         Rock</button>
     <button>Papper</button>
