@@ -12,11 +12,13 @@
     <script>
         const flipCoin = () => {
             let randomNumber = Math.random();
+            let result = '';
             if (randomNumber < 0.5) {
-                console.log("heads")
+                result = 'heads';
             } else {
-                console.log("tails")
+                result = 'tails';
             }
+            console.log(result)
         }
 
     </script>
