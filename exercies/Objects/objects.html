@@ -9,14 +9,40 @@
 
 <body>
     <script>
-        const products = {
-            name: 'socks',
-            price: 100
-        };
-        console.log(products)
-        console.log(products.name = 'cotton socks')
-        console.log(products.newProperty = true);
-        delete products.newProperty;
+        // const products = {
+        //     name: 'socks',
+        //     price: 100
+        // };
+        // console.log(products)
+        // console.log(products.name = 'cotton socks')
+        // console.log(products.newProperty = true);
+        // delete products.newProperty;
+
+        // const product2 = {
+        //     name: 'shirt'
+        // }
+        // console.log(product2);
+        // console.log(product2['delivery-time']) //bracket notation
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '2 days',
+            rating: {
+                starts: 4.5,
+                count: 57
+            },
+            fun: () => {
+                console.log("function inside object")
+            }
+        }
+        // console.log(product2.rating)
+        // console.log(product2['rating'])
+        console.log(product2.rating.count);
+        console.log(product2['rating']['count'])
+        product2.fun();
+
+        // convert product2 to json
+        console.log("JSON", JSON.stringify(product2))
     </script>
 </body>
 
