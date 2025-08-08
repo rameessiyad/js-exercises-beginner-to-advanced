@@ -41,8 +41,11 @@
         console.log(product2['rating']['count'])
         product2.fun();
 
-        // convert product2 to json
-        console.log("JSON", JSON.stringify(product2))
+        // convert product2 to JSON
+        const ObjToJSON = JSON.stringify(product2);
+
+        //convert JSON -> js object
+        console.log((JSON.parse(ObjToJSON)))
     </script>
 </body>
 
