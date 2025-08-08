@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Projects</title>
 </head>
+
 <body>
     <p>Click to subscribe</p>
-    <button>Subscribe</button>
+    <button id="subBtn" onclick="subscribe()">Subscribe</button>
+
+    <script>
+        const subscribe = () => {
+            const subBtn = document.querySelector('#subBtn');
+            // if (subBtn.innerHTML === "Subscribe") {
+            //     subBtn.innerHTML = "Subscribed"
+            // } else {
+            //     subBtn.innerHTML = "Subscribe"
+            // }
+            subBtn.innerHTML === 'Subscribe' ? subBtn.innerHTML = 'Subscribed' : subBtn.innerHTML = 'Subscribe'
+        }
+    </script>
 </body>
+
 </html>
