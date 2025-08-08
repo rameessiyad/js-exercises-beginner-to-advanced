@@ -24,28 +24,36 @@
         // console.log(product2);
         // console.log(product2['delivery-time']) //bracket notation
 
-        const product2 = {
-            name: 'shirt',
-            ['delivery-time']: '2 days',
-            rating: {
-                starts: 4.5,
-                count: 57
-            },
-            fun: () => {
-                console.log("function inside object")
-            }
+        // const product2 = {
+        //     name: 'shirt',
+        //     ['delivery-time']: '2 days',
+        //     rating: {
+        //         starts: 4.5,
+        //         count: 57
+        //     },
+        //     fun: () => {
+        //         console.log("function inside object")
+        //     }
+        // }
+        // // console.log(product2.rating)
+        // // console.log(product2['rating'])
+        // console.log(product2.rating.count);
+        // console.log(product2['rating']['count'])
+        // product2.fun();
+
+        // // convert product2 to JSON
+        // const jsonString = JSON.stringify(product2);
+
+        // //convert JSON -> js object
+        // console.log((JSON.parse(jsonString)))
+
+        // Object are references
+        const object1 = {
+            message: 'Hello'
         }
-        // console.log(product2.rating)
-        // console.log(product2['rating'])
-        console.log(product2.rating.count);
-        console.log(product2['rating']['count'])
-        product2.fun();
 
-        // convert product2 to JSON
-        const jsonString = JSON.stringify(product2);
-
-        //convert JSON -> js object
-        console.log((JSON.parse(jsonString)))
+        // here in the object1 variable the object is not stored, the reference of the path in which its stored in the memory is stored
+       object1.message = 'Good morning' //here we are able to change the message property even though we created object1 with const thats because this variable just contain the reference 
     </script>
 </body>
 
