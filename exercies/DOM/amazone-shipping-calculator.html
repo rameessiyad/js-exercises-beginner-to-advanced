@@ -8,10 +8,22 @@
 </head>
 
 <body>
-    <p>Amazon Shipping Calculator</p>
+    <h3>Amazon Shipping Calculator</h3>
     <p>Order under $40 = + $10 shipping</p>
     <p>Order over $50 = FREE shipping</p>
-    <input type="number" placeholder="Cost of order" /> <button>Calculate</button>
+    <input type="number" placeholder="Cost of order" class="cost-input" /> <button
+        onclick="calculateTotal()">Calculate</button>
+    <p class="total-cost"></p>
+
+    <script>
+        const calculateTotal = () => {
+            let cost = Number(document.querySelector('.cost-input').value);
+            const totalCost = document.querySelector('.total-cost')
+
+            cost < 40 ? cost += 10 : cost
+            totalCost.innerHTML = cost;
+        }
+    </script>
 </body>
 
 </html>
