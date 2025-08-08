@@ -23,8 +23,7 @@
             ties: 0
         }
 
-        document.querySelector('.js-score').innerHTML = `Wins : ${score.wins}, Loses : ${score.loses}, Ties : ${score.ties}`
-
+        updateScoreEl();
         function playGame(playerMove) {
             let randomNumber = Math.random();
             let computerMove;
@@ -77,6 +76,7 @@
             }
 
             localStorage.setItem('score', JSON.stringify(score))
+            updateScoreEl();
         }
 
         function resetScore() {
@@ -84,6 +84,11 @@
             score.loses = 0;
             score.ties = 0;
             localStorage.removeItem('score')
+            updateScoreEl();
+        }
+
+        function updateScoreEl() {
+            document.querySelector('.js-score').innerHTML = `Wins : ${score.wins}, Loses : ${score.loses}, Ties : ${score.ties}`
         }
     </script>
 </body>
