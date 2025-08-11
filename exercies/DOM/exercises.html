@@ -21,12 +21,22 @@
     <p id="result"></p>
 
     <!-- 2 -->
-
+    <input type="text" placeholder="Name" id="nameInput" />
+    <button type="submit" onclick="showName()">Submit</button>
+    <p id="name"></p>
     <script>
-        const result = document.querySelector('#result');
-
+        // 1
         const showResult = (val) => {
+            const result = document.querySelector('#result');
             result.innerHTML = `You chose: ${val}`
+        }
+
+        // 2
+        const showName = () => {
+            const nameEl = document.querySelector('#nameInput').value
+            const nameText = document.querySelector('#name')
+            console.log(nameEl)
+            nameText.innerHTML = `Your name is: ${nameEl}`;
         }
     </script>
 </body>
