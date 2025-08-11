@@ -13,9 +13,19 @@
 </head>
 
 <body>
-    <button>Heads</button>
-    <button>Tails</button>
-    <p></p>
+    <button id="heads" onclick="showResult('Heads')">Heads</button>
+    <button id="tails" onclick="showResult('Tails')">Tails</button>
+    <p id="result"></p>
+
+    <script>
+        const headsBtn = document.querySelector("#heads");
+        const tailsBtn = document.querySelector('#tails');
+        const result = document.querySelector('#result');
+
+        const showResult = (val) => {
+            result.innerHTML = `You chose: ${val}`
+        }
+    </script>
 </body>
 
 </html>
