@@ -1,5 +1,7 @@
 <!-- q1 create 2 buttons heads and tails and a paragraph tag underneath, when clicking the 'heads' button, display
     'You choose: heads'in the paragraph , when the 'tails' button, display 'You choose: tails'
+
+     q2 create a text box(input) and a submit button. When clicking 'Submit', display 'You name is ${text}' on the page 
     
 -->
 
@@ -13,9 +15,12 @@
 </head>
 
 <body>
+    <!-- 1 -->
     <button id="heads" onclick="showResult('Heads')">Heads</button>
     <button id="tails" onclick="showResult('Tails')">Tails</button>
     <p id="result"></p>
+
+    <!-- 2 -->
 
     <script>
         const result = document.querySelector('#result');
