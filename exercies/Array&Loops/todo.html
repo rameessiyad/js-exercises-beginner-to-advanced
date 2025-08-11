@@ -8,8 +8,26 @@
 </head>
 
 <body>
-    <input type="text" placeholder="Enter todo" />
+    <input type="text" placeholder="Enter todo" id="todo-input" />
     <button type="submit">Submit</button>
+
+    <script>
+        const todoList = ['Make dinner', 'wash dishes'];
+        let todoListHTML = '';
+
+        for (let i = 0; i < todoList.length; i++) {
+            const todo = todoList[i];
+            const html = `<p>${todo}</p>`
+            todoListHTML += html;
+        }
+
+        console.log(todoListHTML)
+
+        const addTodo = () => {
+            const todoVal = document.querySelector('#todo-input').value;
+        }
+
+    </script>
 </body>
 
 </html>
