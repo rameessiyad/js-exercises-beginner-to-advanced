@@ -12,3 +12,12 @@ const getLastValue = (array) => {
 
 //q-3 create a func arraySwap(array) that takes an array and returns an array where the first and last values are swapped;
 //example -> arraySwap([1,20,22,24,5]) => [5,20,22,24,1]
+const arraySwap = (array) => {
+  const arr = [...array];
+
+  const lastIndex = arr.length - 1;
+  [arr[0], arr[lastIndex]] = [arr[lastIndex], arr[0]];
+  console.log(arr);
+};
+
+arraySwap(["hi", "hello", "good"]);
